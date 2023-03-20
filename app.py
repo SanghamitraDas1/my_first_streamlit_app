@@ -85,7 +85,7 @@ bar = alt.Chart(source).mark_bar(color='purple').encode(
     x='year:O',
     y='wheat:Q'
     )
-line = alt.Chart(source).mark_line(color='x').transform_window(
+line = alt.Chart(source).mark_line(color='y').transform_window(
     # The field to average
     rolling_mean='mean(wheat)',
     # The number of values before and after the current value to include.
